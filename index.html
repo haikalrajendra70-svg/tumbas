@@ -14,14 +14,14 @@
             --danger: #dc3545;
             --warning: #ffc107;
         }
-
+ 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+ 
         body {
             background-color: var(--bg-light);
             color: var(--text-dark);
@@ -30,7 +30,7 @@
             align-items: center;
             min-height: 100vh;
         }
-
+ 
         /* Simulasi Bingkai HP */
         .phone-container {
             width: 100%;
@@ -46,7 +46,7 @@
             overflow: hidden;
             position: relative;
         }
-
+ 
         /* Header Aplikasi TUMBAS */
         .app-header {
             background-color: var(--primary);
@@ -58,7 +58,7 @@
             letter-spacing: 0.8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-
+ 
         /* Area Konten Utama */
         .app-content {
             flex: 1;
@@ -70,7 +70,7 @@
             align-items: center;
             position: relative;
         }
-
+ 
         /* Layar Sambutan Aktivasi Awal */
         .start-overlay {
             position: absolute;
@@ -87,20 +87,20 @@
             padding: 30px;
             text-align: center;
         }
-
+ 
         .start-title {
             font-size: 1.8rem;
             font-weight: bold;
             color: var(--primary);
             margin-bottom: 10px;
         }
-
+ 
         .start-subtitle {
             font-size: 0.95rem;
             color: #6c757d;
             margin-bottom: 30px;
         }
-
+ 
         .start-btn {
             background: var(--primary);
             color: white;
@@ -113,7 +113,7 @@
             box-shadow: 0 6px 15px rgba(111, 66, 193, 0.4);
             transition: all 0.2s;
         }
-
+ 
         /* Alur Langkah Belanja */
         .step-indicator {
             background: var(--primary-light);
@@ -125,7 +125,7 @@
             text-align: center;
             width: 100%;
         }
-
+ 
         /* Tampilan Utama Uang yang Dipilih */
         .display-money-box {
             width: 100%;
@@ -139,13 +139,13 @@
             align-items: center;
             overflow: hidden;
         }
-
+ 
         .display-money-box img {
             width: auto;
             height: 85%;
             object-fit: contain;
         }
-
+ 
         /* Container Grid Dompet Pilihan Uang (Langkah 1) */
         .money-grid-selection {
             display: grid;
@@ -154,7 +154,7 @@
             width: 100%;
             margin-top: 5px;
         }
-
+ 
         /* Kartu Tombol Visual Uang */
         .money-card-btn {
             background: #fff;
@@ -169,25 +169,25 @@
             transition: all 0.2s ease;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-
+ 
         .money-card-btn:hover {
             border-color: var(--primary);
             transform: translateY(-2px);
         }
-
+ 
         .money-card-btn img {
             width: 100%;
             height: 60px;
             object-fit: contain;
             border-radius: 4px;
         }
-
+ 
         .money-card-btn span {
             font-size: 0.85rem;
             font-weight: bold;
             color: var(--primary);
         }
-
+ 
         /* Gelombang Suara */
         .wave-container {
             display: flex;
@@ -200,7 +200,7 @@
             border-radius: 8px;
             padding: 5px;
         }
-
+ 
         .wave-bar {
             width: 4px;
             height: 12px;
@@ -208,7 +208,7 @@
             border-radius: 2px;
             transition: height 0.1s ease;
         }
-
+ 
         .wave-active .wave-bar {
             animation: bounce 0.8s ease infinite alternate;
         }
@@ -216,13 +216,13 @@
         .wave-active .wave-bar:nth-child(3) { animation-delay: 0.2s; }
         .wave-active .wave-bar:nth-child(4) { animation-delay: 0.3s; }
         .wave-active .wave-bar:nth-child(5) { animation-delay: 0.4s; }
-
+ 
         @keyframes bounce {
             0% { height: 5px; }
             100% { height: 30px; }
         }
-
-        /* Visual Matching Guidance (Layar Tengah) */
+ 
+        /* Visual Matching Guidance */
         .visual-guidance {
             width: 100%;
             border: 2px solid #ddd;
@@ -237,7 +237,7 @@
             justify-content: center;
             align-items: center;
         }
-
+ 
         .money-images-container {
             display: flex;
             flex-wrap: wrap;
@@ -248,7 +248,7 @@
             max-height: 150px;
             overflow-y: auto;
         }
-
+ 
         .money-image {
             max-width: 42%;
             height: auto;
@@ -256,15 +256,15 @@
             border-radius: 6px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.1);
         }
-
+ 
         .info-text {
             font-size: 1rem;
             font-weight: 600;
             color: #495057;
             line-height: 1.4;
         }
-
-        /* Tab Opsi Kembalian Beraneka Ragam (Diubah Menjadi 3 Opsi) */
+ 
+        /* Tab Opsi Kembalian */
         .option-toggle-container {
             display: none;
             width: 100%;
@@ -272,7 +272,7 @@
             gap: 6px;
             margin-top: 5px;
         }
-
+ 
         .opt-btn {
             flex: 1;
             padding: 8px 6px;
@@ -286,12 +286,12 @@
             transition: all 0.2s;
             text-align: center;
         }
-
+ 
         .opt-btn.active {
             background: var(--primary);
             color: white;
         }
-
+ 
         /* Input Ketik Manual */
         .manual-input-box {
             display: none;
@@ -299,7 +299,7 @@
             gap: 8px;
             margin-top: 5px;
         }
-
+ 
         .manual-input-box input {
             flex: 1;
             padding: 10px;
@@ -308,7 +308,7 @@
             font-size: 1rem;
             outline: none;
         }
-
+ 
         .manual-input-box button {
             padding: 10px 16px;
             background: var(--primary);
@@ -318,7 +318,7 @@
             cursor: pointer;
             font-weight: bold;
         }
-
+ 
         /* Panel Kontrol Pengguna di Bawah */
         .bottom-controls {
             padding: 15px 20px;
@@ -329,7 +329,7 @@
             align-items: center;
             gap: 12px;
         }
-
+ 
         .action-buttons-wrapper {
             display: flex;
             align-items: center;
@@ -337,7 +337,7 @@
             width: 100%;
             padding: 0 10px;
         }
-
+ 
         .mic-btn {
             width: 60px;
             height: 60px;
@@ -353,7 +353,7 @@
             box-shadow: 0 4px 10px rgba(111, 66, 193, 0.4);
             transition: all 0.2s ease;
         }
-
+ 
         .keyboard-btn, .reset-btn {
             padding: 10px 14px;
             color: white;
@@ -363,7 +363,7 @@
             font-size: 0.85rem;
             font-weight: bold;
         }
-
+ 
         .keyboard-btn { background: #6c757d; }
         .reset-btn { background: var(--danger); }
         .mic-active { background-color: var(--danger) !important; }
@@ -371,26 +371,26 @@
     </style>
 </head>
 <body>
-
+ 
 <div class="phone-container">
     <div class="app-header">TUMBAS</div>
-
+ 
     <div class="app-content">
         <div class="start-overlay" id="startOverlay">
             <div class="start-title">TUMBAS</div>
             <div class="start-subtitle">Teknologi Unggul Membantu Belanja Anak Spesial</div>
             <button class="start-btn" onclick="mulaiAplikasi()">MULAI TUMBAS 🔊</button>
         </div>
-
+ 
         <div class="step-indicator" id="stepIndicator">Langkah 1: Pilih Uang Anda</div>
-
+ 
         <div class="display-money-box" id="displayMoneyBox">
             <div id="displayPlaceholder" style="color: #6c757d; font-size: 0.85rem; text-align: center; padding: 10px;">
                 Uang yang kamu pilih akan muncul di sini.
             </div>
             <img id="selectedMoneyImg" src="" alt="Uang Terpilih" style="display: none;">
         </div>
-
+ 
         <div class="money-grid-selection" id="moneyGridPanel">
             <div class="money-card-btn" onclick="pilihUangVisual(500)">
                 <img src="500 rupiah.jfif" alt="Rp 500">
@@ -425,28 +425,28 @@
                 <span>Rp 100.000</span>
             </div>
         </div>
-
+ 
         <div class="wave-container" id="voiceWave">
             <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
         </div>
-
+ 
         <div class="visual-guidance">
             <div id="guidanceText" class="info-text">Silakan masukkan uang yang dibawa belanja.</div>
             <div id="moneyImagesContainer" class="money-images-container"></div>
         </div>
-
+ 
         <div class="option-toggle-container" id="optionToggleContainer">
             <button class="opt-btn active" id="optBtnA" onclick="tukarOpsiKembalian('A')">Opsi 1</button>
             <button class="opt-btn" id="optBtnB" onclick="tukarOpsiKembalian('B')">Opsi 2</button>
             <button class="opt-btn" id="optBtnC" onclick="tukarOpsiKembalian('C')">Opsi 3</button>
         </div>
-
+ 
         <div class="manual-input-box" id="manualInputBox">
             <input type="number" id="inputTotalHarga" placeholder="Masukkan total harga (Rp)" min="0">
             <button onclick="prosesKetikManual()">OK</button>
         </div>
     </div>
-
+ 
     <div class="bottom-controls">
         <div class="action-buttons-wrapper">
             <button class="keyboard-btn" id="keyboardBtn" onclick="toggleKetikMenu()" disabled>⌨️ Ketik</button>
@@ -456,19 +456,18 @@
         <div class="status-prompt" id="audioPrompt">Tekan tombol MULAI di atas terlebih dahulu.</div>
     </div>
 </div>
-
+ 
 <script>
     let currentStep = 1;
     let uangDiscan = 0;
     let totalBelanja = 0;
     let timerTransisi = null;
-
-    // Menambah Opsi C pada global state aplikasi
+ 
     let rincianOpsiA = [];
     let rincianOpsiB = [];
     let rincianOpsiC = [];
     let totalKembalianGlobal = 0;
-
+ 
     const bankUangGambar = {
         100000: "100.000 rupiah.jfif",
         50000: "50.000 rupiah.jfif",
@@ -479,7 +478,7 @@
         1000: "1.000 rupiah.jfif",
         500: "500 rupiah.jfif"
     };
-
+ 
     const startOverlay = document.getElementById('startOverlay');
     const stepIndicator = document.getElementById('stepIndicator');
     const displayPlaceholder = document.getElementById('displayPlaceholder');
@@ -497,21 +496,54 @@
     const optBtnA = document.getElementById('optBtnA');
     const optBtnB = document.getElementById('optBtnB');
     const optBtnC = document.getElementById('optBtnC');
+ 
+    // Kamus ucapan audio baku pesanan pengguna
+    function ucapanNominalRupiah(angka) {
+        if (angka === 0) return "nol rupiah";
+        
+        const databaseSuaraBaku = {
+            500: "lima ratus rupiah",
+            1000: "seribu rupiah",
+            2000: "dua ribu rupiah",
+            3000: "tiga ribu rupiah",
+            4000: "empat ribu rupiah",
+            5000: "lima ribu rupiah",
+            6000: "enam ribu rupiah",
+            7000: "tujuh ribu rupiah",
+            8000: "delapan ribu rupiah",
+            9000: "sembilan ribu rupiah",
+            10000: "sepuluh ribu rupiah",
+            20000: "dua puluh ribu rupiah",
+            50000: "lima puluh ribu rupiah",
+            100000: "seratus ribu rupiah"
+        };
 
-    function compressibility(angka) {
-        if (angka === 0) return "nol";
+        if (databaseSuaraBaku[angka]) {
+            return databaseSuaraBaku[angka];
+        }
+
+        // Fallback dinamis jika nominal gabungan besar (misal Rp75.000 dll)
         const bilangan = ["", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas"];
-        let temp = "";
-        if (angka < 12) temp = " " + bilangan[angka];
-        else if (angka < 20) temp = compressibility(angka - 10) + " belas";
-        else if (angka < 100) temp = compressibility(Math.floor(angka / 10)) + " puluh" + compressibility(angka % 10);
-        else if (angka < 200) temp = " seratus" + compressibility(angka - 100);
-        else if (angka < 1000) temp = compressibility(Math.floor(angka / 100)) + " ratus" + compressibility(angka % 100);
-        else if (angka < 2000) temp = " seribu" + compressibility(angka - 1000);
-        else if (angka < 1000000) temp = compressibility(Math.floor(angka / 1000)) + " ribu" + compressibility(angka % 1000);
-        return temp.trim();
+        function terjemahkan(n) {
+            let temp = "";
+            if (n < 12) temp = " " + bilangan[n];
+            else if (n < 20) temp = terjemahkan(n - 10) + " belas";
+            else if (n < 100) temp = terjemahkan(Math.floor(n / 10)) + " puluh" + terjemahkan(n % 10);
+            else if (n < 200) temp = " seratus" + terjemahkan(n - 100);
+            else if (n < 1000) temp = terjemahkan(Math.floor(n / 100)) + " ratus" + terjemahkan(n % 100);
+            else if (n < 2000) temp = " seribu" + terjemahkan(n - 1000);
+            else if (n < 1000000) temp = terjemahkan(Math.floor(n / 1000)) + " ribu" + terjemahkan(n % 1000);
+            return temp;
+        }
+        let hasilSintaks = terjemahkan(angka).trim().replace(/satu ratus/g, "seratus").replace(/satu ribu/g, "seribu");
+        return hasilSintaks + " rupiah";
     }
 
+    function ucapanJumlah(angka) {
+        const bilangan = ["nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh"];
+        return angka <= 10 ? bilangan[angka] : angka.toString();
+    }
+ 
     function bicara(teks) {
         if ('speechSynthesis' in window) {
             window.speechSynthesis.cancel(); 
@@ -523,31 +555,31 @@
             window.speechSynthesis.speak(ucapan);
         }
     }
-
+ 
     function mulaiAplikasi() {
         startOverlay.style.display = "none";
         audioPrompt.innerText = "Sistem siap. Silakan pilih uang kamu.";
         bicara("Selamat datang di aplikasi Tumbas. Langkah pertama, silakan lihat gambar uang di layar lalu ketuk uang yang kamu miliki sekarang.");
     }
-
+ 
     function pilihUangVisual(nominal) {
         if (currentStep !== 1) return;
-
+ 
         uangDiscan = nominal;
         displayPlaceholder.style.display = 'none';
         selectedMoneyImg.src = bankUangGambar[nominal];
         selectedMoneyImg.style.display = 'block';
         moneyGridPanel.style.display = 'none';
-
-        const namaNominalSuara = compressibility(nominal);
-        bicara(`Uang kamu berhasil dipilih sebesar ${namaNominalSuara} rupiah.`);
+ 
+        const namaNominalSuara = ucapanNominalRupiah(nominal);
+        bicara(`Uang kamu berhasil dipilih sebesar ${namaNominalSuara}.`);
         
         guidanceText.innerHTML = `Uang Kamu:<br><strong style="color:var(--primary); font-size:1.4rem;">Rp ${nominal.toLocaleString('id-ID')}</strong>`;
         audioPrompt.innerText = "Uang dipilih. Bersiap ke langkah berikutnya...";
-
+ 
         timerTransisi = setTimeout(pindahKeLangkah2, 4500); 
     }
-
+ 
     function pindahKeLangkah2() {
         currentStep = 2;
         stepIndicator.innerText = "Langkah 2: Masukkan Total Belanja";
@@ -560,7 +592,7 @@
         
         bicara("Sekarang, jika sudah tahu total harganya, kamu bisa sebutkan lewat mikrofon atau tekan menu ketik untuk memasukkan angka.");
     }
-
+ 
     function toggleKetikMenu() {
         if(manualInputBox.style.display === "flex") {
             manualInputBox.style.display = "none";
@@ -569,7 +601,7 @@
             inputTotalHarga.focus();
         }
     }
-
+ 
     function prosesKetikManual() {
         const nilaiInput = parseInt(inputTotalHarga.value);
         if (isNaN(nilaiInput) || nilaiInput <= 0) {
@@ -578,14 +610,14 @@
         }
         evaluasiTotalHarga(nilaiInput);
     }
-
+ 
     function toggleVoiceInput() {
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         if (!SpeechRecognition) { alert("Fitur suara tidak didukung."); return; }
-
+ 
         const recognition = new SpeechRecognition();
         recognition.lang = 'id-ID';
-
+ 
         recognition.onstart = () => {
             micBtn.classList.add('mic-active');
             audioPrompt.innerText = "Mendengarkan total harga...";
@@ -606,115 +638,184 @@
         };
         recognition.start();
     }
-
+ 
     function evaluasiTotalHarga(nominal) {
         totalBelanja = nominal;
         manualInputBox.style.display = "none";
-
-        const teksTotalSuara = compressibility(totalBelanja);
-        const teksUangSuara = compressibility(uangDiscan);
-
+ 
+        const teksTotalSuara = ucapanNominalRupiah(totalBelanja);
+        const teksUangSuara = ucapanNominalRupiah(uangDiscan);
+ 
         if (totalBelanja > uangDiscan) {
-            bicara(`Maaf, total belanja kamu ${teksTotalSuara} rupiah. Uang kamu tidak cukup karena kamu hanya membawa uang ${teksUangSuara} rupiah.`);
+            bicara(`Maaf, total belanja kamu ${teksTotalSuara}. Uang kamu tidak cukup karena kamu hanya membawa uang ${teksUangSuara}.`);
             guidanceText.innerHTML = `<span style="color:var(--danger); font-size:1.2rem;">Uang Tidak Cukup!</span><br>Total: Rp ${totalBelanja.toLocaleString('id-ID')}<br>Uang Anda: Rp ${uangDiscan.toLocaleString('id-ID')}`;
         } else {
-            bicara(`Total belanja terdeteksi ${teksTotalSuara} rupiah. Menghitung tiga opsi uang kembalian.`);
+            bicara(`Total belanja terdeteksi ${teksTotalSuara}. Menghitung tiga opsi uang kembalian.`);
             setTimeout(hitungRagamKembalian, 3500);
         }
     }
-
-    // PENYEMPURNAAN LOGIKA: Menghitung 3 Variasi Opsi Kembalian Sekaligus
+ 
+    // PENYEMPURNAAN LOGIKA VARIATION MATRIX SESUAI PERMINTAAN USER
     function hitungRagamKembalian() {
         currentStep = 3;
         stepIndicator.innerText = "Langkah 3: Ambil Uang Kembalian";
         micBtn.disabled = true;
         keyboardBtn.disabled = true;
-
+ 
         totalKembalianGlobal = uangDiscan - totalBelanja;
-
+ 
         if (totalKembalianGlobal === 0) {
             guidanceText.innerHTML = `<strong style="color:var(--success); font-size:1.5rem;">Uang Pas!</strong><br>Tidak ada uang kembalian.`;
             bicara("Uang kamu pas. Kamu tidak menerima uang kembalian. Terima kasih!");
             return;
         }
-
-        // --- ALGORITMA OPSI A (Pecahan Terbesar / Ideal) ---
-        let sisaA = totalKembalianGlobal;
-        let pecahanA = [100000, 50000, 20000, 10000, 5000, 2000, 1000, 500];
+ 
         rincianOpsiA = [];
-        for (let p of pecahanA) {
-            let jml = Math.floor(sisaA / p);
+        rincianOpsiB = [];
+        rincianOpsiC = [];
+
+        let sisaKembalian = totalKembalianGlobal;
+
+        // 1. Amankan dan isolasi terlebih dahulu lembaran besar (>= 20.000) agar seragam di semua opsi
+        let pecahanBesar = [100000, 50000, 20000];
+        for (let p of pecahanBesar) {
+            let jml = Math.floor(sisaKembalian / p);
             if (jml > 0) {
                 rincianOpsiA.push({ nominal: p, lembar: jml });
-                sisaA %= p;
+                rincianOpsiB.push({ nominal: p, lembar: jml });
+                rincianOpsiC.push({ nominal: p, lembar: jml });
+                sisaKembalian %= p;
             }
         }
 
-        // --- ALGORITMA OPSI B (Pecahan Sedang / Lebih Kecil) ---
-        let sisaB = totalKembalianGlobal;
-        rincianOpsiB = [];
-        if (sisaB === 4500) {
-            rincianOpsiB = [{ nominal: 1000, lembar: 4 }, { nominal: 500, lembar: 1 }];
-        } else if (sisaB >= 2000) {
-            let pecahanB = [100000, 50000, 20000, 10000, 2000, 1000, 500]; 
-            for (let p of pecahanB) {
-                let jml = Math.floor(sisaB / p);
-                if (jml > 0) {
-                    rincianOpsiB.push({ nominal: p, lembar: jml });
-                    sisaB %= p;
+        // 2. Baca sisa komponen di bawah Rp 20.000 (Sisa ratusan rupiah dipasangkan juga jika ada)
+        let sisaRibuanKunci = Math.floor(sisaKembalian / 500) * 500; // Pembulatan aman ke kelipatan 500 terdekat
+        let sisaEkorLogam = sisaKembalian % 500; // Menjaga sisa receh jika ada input manual tidak bulat
+
+        // Terapkan matriks logika dinamis sesuai perintah guru
+        switch(sisaRibuanKunci) {
+            case 10000:
+                rincianOpsiA.push({ nominal: 5000, lembar: 2 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 5 });
+                rincianOpsiC.push({ nominal: 5000, lembar: 1 }, { nominal: 2000, lembar: 2 }, { nominal: 1000, lembar: 1 });
+                break;
+            case 9500: // Penanganan otomatis jika gabungan pecahan sisa request + logam 500 perak (Contoh: 5.500 + 4.000)
+                rincianOpsiA.push({ nominal: 5000, lembar: 1 }, { nominal: 2000, lembar: 2 }, { nominal: 500, lembar: 1 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 4 }, { nominal: 1000, lembar: 1 }, { nominal: 500, lembar: 1 });
+                rincianOpsiC.push({ nominal: 5000, lembar: 1 }, { nominal: 2000, lembar: 1 }, { nominal: 1000, lembar: 2 }, { nominal: 500, lembar: 1 });
+                break;
+            case 9000:
+                rincianOpsiA.push({ nominal: 5000, lembar: 1 }, { nominal: 2000, lembar: 2 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 3 }, { nominal: 1000, lembar: 3 });
+                rincianOpsiC.push({ nominal: 5000, lembar: 1 }, { nominal: 2000, lembar: 1 }, { nominal: 1000, lembar: 2 });
+                break;
+            case 8000:
+                rincianOpsiA.push({ nominal: 5000, lembar: 1 }, { nominal: 2000, lembar: 1 }, { nominal: 1000, lembar: 1 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 3 }, { nominal: 1000, lembar: 2 });
+                rincianOpsiC.push({ nominal: 5000, lembar: 1 }, { nominal: 1000, lembar: 3 });
+                break;
+            case 7000:
+                rincianOpsiA.push({ nominal: 5000, lembar: 1 }, { nominal: 2000, lembar: 1 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 3 }, { nominal: 1000, lembar: 1 });
+                rincianOpsiC.push({ nominal: 5000, lembar: 1 }, { nominal: 1000, lembar: 2 });
+                break;
+            case 6000:
+                rincianOpsiA.push({ nominal: 5000, lembar: 1 }, { nominal: 1000, lembar: 1 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 3 });
+                rincianOpsiC.push({ nominal: 2000, lembar: 2 }, { nominal: 1000, lembar: 2 });
+                break;
+            case 5500: // Contoh kasus Rp 5.500 dari perintah sebelumnya tetap dipertahankan
+                rincianOpsiA.push({ nominal: 5000, lembar: 1 }, { nominal: 500, lembar: 1 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 2 }, { nominal: 1000, lembar: 1 }, { nominal: 500, lembar: 1 });
+                rincianOpsiC.push({ nominal: 2000, lembar: 1 }, { nominal: 1000, lembar: 3 }, { nominal: 500, lembar: 1 });
+                break;
+            case 5000:
+                rincianOpsiA.push({ nominal: 5000, lembar: 1 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 2 }, { nominal: 1000, lembar: 1 });
+                rincianOpsiC.push({ nominal: 1000, lembar: 5 });
+                break;
+            case 4000:
+                rincianOpsiA.push({ nominal: 2000, lembar: 2 });
+                rincianOpsiB.push({ nominal: 2000, lembar: 1 }, { nominal: 1000, lembar: 2 });
+                rincianOpsiC.push({ nominal: 1000, lembar: 4 });
+                break;
+            case 3000:
+                rincianOpsiA.push({ nominal: 2000, lembar: 1 }, { nominal: 1000, lembar: 1 }); // Disesuaikan logis: 2k+1k=3k
+                rincianOpsiB.push({ nominal: 1000, lembar: 3 });
+                rincianOpsiC.push({ nominal: 2000, lembar: 1 }, { nominal: 500, lembar: 2 });
+                break;
+            case 2000:
+                rincianOpsiA.push({ nominal: 2000, lembar: 1 });
+                rincianOpsiB.push({ nominal: 1000, lembar: 2 });
+                rincianOpsiC.push({ nominal: 1000, lembar: 1 }, { nominal: 500, lembar: 2 });
+                break;
+            case 1500:
+                rincianOpsiA.push({ nominal: 1000, lembar: 1 }, { nominal: 500, lembar: 1 });
+                rincianOpsiB.push({ nominal: 500, lembar: 3 });
+                rincianOpsiC.push({ nominal: 1000, lembar: 1 }, { nominal: 500, lembar: 1 });
+                break;
+            case 1000:
+                rincianOpsiA.push({ nominal: 1000, lembar: 1 });
+                rincianOpsiB.push({ nominal: 500, lembar: 2 });
+                // Opsi 3 diisi tanda kosong sesuai instruksi khusus Anda (-)
+                rincianOpsiC = null; 
+                break;
+            case 500:
+                rincianOpsiA.push({ nominal: 500, lembar: 1 });
+                rincianOpsiB.push({ nominal: 500, lembar: 1 });
+                rincianOpsiC = null;
+                break;
+            default:
+                // Fallback algoritma standar pengurang pecahan jika nominal di luar matriks kunci di atas
+                let sisaDetik = sisaRibuanKunci;
+                let standarPecah = [10000, 5000, 2000, 1000, 500];
+                for (let p of standarPecah) {
+                    let jml = Math.floor(sisaDetik / p);
+                    if (jml > 0) {
+                        rincianOpsiA.push({ nominal: p, lembar: jml });
+                        rincianOpsiB.push({ nominal: p, lembar: jml });
+                        rincianOpsiC.push({ nominal: p, lembar: jml });
+                        sisaDetik %= p;
+                    }
                 }
-            }
-        } else {
-            let pecahanB = [100000, 50000, 20000, 10000, 5000, 2000, 500];
-            for (let p of pecahanB) {
-                let jml = Math.floor(sisaB / p);
-                if (jml > 0) {
-                    rincianOpsiB.push({ nominal: p, lembar: jml });
-                    sisaB %= p;
-                }
-            }
         }
 
-        // --- ALGORITMA OPSI C BARU (Kombinasi Campuran / Lebih Eceran) ---
-        let sisaC = totalKembalianGlobal;
-        rincianOpsiC = [];
-        if (sisaC === 4500) {
-            rincianOpsiC = [{ nominal: 2000, lembar: 1 }, { nominal: 1000, lembar: 2 }, { nominal: 500, lembar: 1 }];
-        } else if (sisaC >= 5000) {
-            // Memaksa memotong kelipatan pecahan besar agar menghasilkan uang seribuan & dua ribuan eceran
-            let pecahanC = [100000, 50000, 20000, 5000, 2000, 1000, 500];
-            for (let p of pecahanC) {
-                let jml = Math.floor(sisaC / p);
-                if (jml > 0) {
-                    rincianOpsiC.push({ nominal: p, lembar: jml });
-                    sisaC %= p;
-                }
-            }
-        } else {
-            // Jika di bawah 5.000, default memecah ke nominal 1000 rupiah sebanyak mungkin
-            let pecahanC = [2000, 1000, 500];
-            for (let p of pecahanC) {
-                let jml = Math.floor(sisaC / p);
-                if (jml > 0) {
-                    rincianOpsiC.push({ nominal: p, lembar: jml });
-                    sisaC %= p;
-                }
-            }
+        // Memasukkan sisa ekor receh mikro ke dalam array (jika ada) agar hitungan matematika tetap valid
+        if (sisaEkorLogam > 0) {
+            if(rincianOpsiA) rincianOpsiA.push({ nominal: 500, lembar: 1 });
+            if(rincianOpsiB) rincianOpsiB.push({ nominal: 500, lembar: 1 });
+            if(rincianOpsiC) rincianOpsiC.push({ nominal: 500, lembar: 1 });
         }
 
-        // Munculkan Tab Opsi yang sekarang berisi 3 Pilihan tombol
+        // Urutkan susunan internal mata uang agar rapi saat menggambar elemen gambar dari nilai terbesar ke terkecil
+        if(rincianOpsiA) rincianOpsiA.sort((x, y) => y.nominal - x.nominal);
+        if(rincianOpsiB) rincianOpsiB.sort((x, y) => y.nominal - x.nominal);
+        if(rincianOpsiC) rincianOpsiC.sort((x, y) => y.nominal - x.nominal);
+
         optionToggleContainer.style.display = "flex";
+        
+        // Atur status aktif/nonaktif tombol Opsi 3 berdasarkan ada tidaknya isi data alternatif pecahan
+        if (rincianOpsiC === null || rincianOpsiC.length === 0) {
+            optBtnC.innerText = "-";
+            optBtnC.disabled = true;
+            optBtnC.style.opacity = "0.5";
+            optBtnC.style.cursor = "not-allowed";
+        } else {
+            optBtnC.innerText = "Opsi 3";
+            optBtnC.disabled = false;
+            optBtnC.style.opacity = "1";
+            optBtnC.style.cursor = "pointer";
+        }
 
-        // Tampilkan default Opsi 1 di awal
         tukarOpsiKembalian('A');
     }
-
+ 
     function tukarOpsiKembalian(jenisOpsi) {
         moneyImagesContainer.innerHTML = ""; 
         
         let rincianPecahan;
         let nomorOpsiText = "1";
-
+ 
         if (jenisOpsi === 'A') {
             rincianPecahan = rincianOpsiA;
             nomorOpsiText = "1";
@@ -734,8 +835,15 @@
             optBtnA.classList.remove('active');
             optBtnB.classList.remove('active');
         }
-
+ 
         guidanceText.innerHTML = `Kembalian Anda:<br><strong style="color:var(--success); font-size:1.6rem;">Rp ${totalKembalianGlobal.toLocaleString('id-ID')}</strong><br><span style="font-size:0.85rem; font-weight:normal; color:#6c757d;">Menampilkan Opsi Susunan Uang ${nomorOpsiText}:</span>`;
+ 
+        // Proteksi render jika memilih opsi 3 yang memang kosong (-) pada nominal kecil
+        if (!rincianPecahan || rincianPecahan.length === 0) {
+            moneyImagesContainer.innerHTML = "<div style='color:#dc3545; font-size:0.9rem; font-weight:bold; margin-top:10px;'>Pilihan alternatif opsi 3 tidak tersedia untuk nominal ini.</div>";
+            bicara("Pilihan alternatif opsi tiga tidak tersedia.");
+            return;
+        }
 
         rincianPecahan.forEach(p => {
             for(let i = 0; i < p.lembar; i++) {
@@ -745,9 +853,9 @@
                 moneyImagesContainer.appendChild(img);
             }
         });
-
-        const tKembalianSuara = compressibility(totalKembalianGlobal);
-        let teksSuaraRincian = `Kembalian kamu totalnya adalah ${tKembalianSuara} rupiah. Di opsi ${nomorOpsiText} ini, kamu bisa mengambil `;
+ 
+        const tKembalianSuara = ucapanNominalRupiah(totalKembalianGlobal);
+        let teksSuaraRincian = `Kembalian kamu totalnya adalah ${tKembalianSuara}. Di opsi ${nomorOpsiText} ini, kamu bisa mengambil `;
         
         const deskripsiWarna = {
             100000: "lembar uang warna merah",
@@ -759,22 +867,26 @@
             1000: "lembar uang warna kuning hijau",
             500: "koin uang logam lima ratus rupiah"
         };
-
-        let narasiPecahan = rincianPecahan.map(p => `${compressibility(p.lembar)} ${deskripsiWarna[p.nominal]}`);
+ 
+        let narasiPecahan = rincianPecahan.map(p => {
+            let kataSatuan = (p.nominal === 500) ? "buah" : "lembar";
+            return `${ucapanJumlah(p.lembar)} ${kataSatuan} ${deskripsiWarna[p.nominal]}`;
+        });
+        
         teksSuaraRincian += narasiPecahan.join(" dan ") + ". Pastikan bentuk dan warnanya pas dengan gambar.";
-
+ 
         audioPrompt.innerText = "Ketuk Opsi 1, 2, atau 3 untuk melihat variasi kombinasi pecahan lembaran uang.";
         bicara(teksSuaraRincian);
     }
-
+ 
     function resetAplikasi() {
         if ('speechSynthesis' in window) { window.speechSynthesis.cancel(); }
         if (timerTransisi) { clearTimeout(timerTransisi); }
-
+ 
         currentStep = 1;
         uangDiscan = 0;
         totalBelanja = 0;
-
+ 
         stepIndicator.innerText = "Langkah 1: Pilih Uang Anda";
         audioPrompt.innerText = "Sistem siap. Silakan pilih uang kamu.";
         guidanceText.innerHTML = "Silakan masukkan uang yang dibawa belanja.";
@@ -783,28 +895,43 @@
         manualInputBox.style.display = "none";
         moneyImagesContainer.innerHTML = "";
         optionToggleContainer.style.display = "none"; 
-
+ 
         selectedMoneyImg.style.display = "none";
         selectedMoneyImg.src = "";
         displayPlaceholder.style.display = "flex";
         moneyGridPanel.style.display = "grid"; 
-
+ 
         micBtn.disabled = true;
         keyboardBtn.disabled = true;
         micBtn.classList.remove('mic-active');
         voiceWave.classList.remove('wave-active');
-
+ 
         setTimeout(() => {
             bicara("Aplikasi diulang. Silakan pilih kembali uang yang kamu miliki sekarang.");
         }, 300);
     }
-
+ 
     function konversiTeksKeAngka(teks) {
-        let cleanText = teks.replace(/ribu/g, "000").replace(/ratus/g, "00").replace(/\s+/g, "");
+        let cleanText = teks.replace(/\s+/g, "")
+                            .replace(/sebelas/g, "11")
+                            .replace(/sepuluh/g, "10")
+                            .replace(/sembilan/g, "9")
+                            .replace(/delapan/g, "8")
+                            .replace(/tujuh/g, "7")
+                            .replace(/enam/g, "6")
+                            .replace(/lima/g, "5")
+                            .replace(/empat/g, "4")
+                            .replace(/tiga/g, "3")
+                            .replace(/dua/g, "2")
+                            .replace(/satu/g, "1")
+                            .replace(/se/g, "1") 
+                            .replace(/ratus/g, "00")
+                            .replace(/ribu/g, "000");
+                            
         let match = cleanText.match(/\d+/);
         return match ? parseInt(match[0]) : 0;
     }
 </script>
-
+ 
 </body>
 </html>
